@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohsen Sharifi</title>
+  <style>
+    :root{
+      --bg:#0e0f12; --fg:#e6e6ea; --accent:#7aa2ff; --line:#23262d;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7f7fb; --fg:#111217; --accent:#1b5cff; --line:#e7e8ee; }
+    }
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font-family:var(--sans);}
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .wrap{max-width:720px; margin:0 auto; padding:80px 24px; text-align:center;}
+    h1{font-weight:700; font-size:42px; margin-bottom:24px;}
+    .links{display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:20px;}
+    .chip{border:1px solid var(--line); background:transparent; color:var(--fg); padding:10px 16px; border-radius:999px; font-size:16px;}
+    footer{margin-top:48px; font-size:13px; color:#888;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Mohsen Sharifi</h1>
+    <div class="links">
+      <a class="chip" href="https://www.linkedin.com/in/sharifi-renani/" target="_blank">LinkedIn</a>
+      <a class="chip" href="https://substack.com/@motionflavour" target="_blank">Substack</a>
+      <a class="chip" href="https://github.com/MohsenSharifi1991" target="_blank">GitHub</a>
+      <a class="chip" href="mailto:mohsen.sharifi91@gmail.com">Email</a>
+    </div>
+    <footer>
+      © <span id="y"></span> Mohsen Sharifi • <a href="https://mosharifi.com">mosharifi.com</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
